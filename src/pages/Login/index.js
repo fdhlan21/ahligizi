@@ -131,7 +131,7 @@ export default function Login({ navigation }) {
         
         <MyGap jarak={50} />
    
-        <MyInput label="Nomor Telephone" iconname="call" placeholder="Masukan Nomor Telephone" />
+        <MyInput label="Nomor Telepon" iconname="call" placeholder="Masukan Nomor Telepon" />
 
 
         <MyGap jarak={20} />

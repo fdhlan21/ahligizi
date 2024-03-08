@@ -176,7 +176,7 @@ export default function Register({ navigation }) {
 
                             
                             {/* NOMOR TELEPON */}
-                            <MyInput label='Nomor HP'  placeholder='Masukan Nomor HP'/>
+                            <MyInput label='Nomor Telepon'  placeholder='Masukan Nomor Telepon'/>
                             <MyGap jarak={20}/>
 
 
@@ -194,7 +194,7 @@ export default function Register({ navigation }) {
                             
                         {/*INPUT KATA SANDI */}
                         <MyInput
-                            placeholder="Kata Sandi..."
+                            placeholder="Kata Sandi"
                             label="Kata Sandi"
                             value={data.password}
                             secureTextEntry={true}

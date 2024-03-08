@@ -61,7 +61,7 @@ export default function ProfileAplikasi({navigation}) {
             
                {/* Jabatan */}
                <View style={{flexDirection:"row", marginTop:-10, padding:10, alignItems:"center", justifyContent:"flex-start"}}>
-            <Text style={{fontFamily:fonts.primary[600], fontSize:MyDimensi/4.2, }}>No HP : <Text style={{fontFamily:fonts.primary[400], fontSize:MyDimensi/4.2, }}>0811557084</Text></Text>
+            <Text style={{fontFamily:fonts.primary[600], fontSize:MyDimensi/4.2, }}>Nomor Telepon : <Text style={{fontFamily:fonts.primary[400], fontSize:MyDimensi/4.2, }}>0811557084</Text></Text>
            
             </View>
 
