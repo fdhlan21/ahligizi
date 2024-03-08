@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { colors } from '../../utils/colors';
 import { MyDimensi, fonts, windowWidth } from '../../utils/fonts';
-import { MyInput, MyGap, MyButton, MyPicker, MyCalendar, MyCalendarSecond } from '../../components';
+import { MyInput, MyGap, MyButton, MyPicker, MyCalendar, MyCalendarSecond, MyHeader } from '../../components';
 import axios from 'axios';
 import { showMessage } from 'react-native-flash-message';
 import { apiURL, api_token, MYAPP } from '../../utils/localStorage';
@@ -27,6 +27,9 @@ import SweetAlert from 'react-native-sweet-alert';
 import { color } from 'react-native-reanimated';
 
 export default function Register({ navigation }) {
+    const backPage = () => {
+        navigation.goBack();
+    }
 
     
 
@@ -120,8 +123,8 @@ export default function Register({ navigation }) {
 
 
     return (
-        
-            <ScrollView
+      
+            <View
                 style={{
                     flex: 1,
                     backgroundColor: colors.white,
@@ -130,6 +133,8 @@ export default function Register({ navigation }) {
                     
                     
                 }}>
+
+                <MyHeader judul="Registrasi" onPress={backPage}/>
 
 
 
@@ -142,14 +147,14 @@ export default function Register({ navigation }) {
                     <View style={{
                         paddingHorizontal: 0,
                     }}>
-                        <Text style={{
+                        {/* <Text style={{
                             fontSize: MyDimensi / 2.5,
                             fontFamily: fonts.primary[600],
                             color: colors.black,
                             textAlign:'center',
                             marginBottom:'10%',
-                            marginTop:20
-                        }}>REGISTRASI</Text>
+                            marginTop:0
+                        }}>REGISTRASI</Text> */}
                         {/* <Text style={{
                             fontSize: MyDimensi / 4,
                             fontFamily: fonts.primary[400],
@@ -246,7 +251,7 @@ export default function Register({ navigation }) {
                         </>
                     }
 
-                    <MyGap jarak={10} />
+                    <MyGap jarak={30} />
                     {loading && <View style={{
                         flex: 1,
                         justifyContent: 'center',
@@ -256,7 +261,7 @@ export default function Register({ navigation }) {
                     </View>}
                 </ScrollView>
 
-            </ScrollView>
+            </View>
 
     );
 }
